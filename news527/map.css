@@ -1,0 +1,174 @@
+@media (min-width: 1243px) {
+  #page4_h1{
+    margin-left: 200px;
+    font-family: "Noto Sans TC", sans-serif;
+
+  }
+
+
+  #backcolor{
+      position: absolute;
+      top:3600px;
+      width:75%;
+      height:900px;
+      background-color: rgba(255,255,255,0.75)
+    }
+
+
+  #picmap {
+    position: absolute;
+    top: -100px;
+    width: 533.3333px;
+    height: 613.496933px;
+  }
+
+  #picmap1 {
+    position: relative;
+    top: -8.5vh;
+    left: 1.5vw;
+    width: 68%;
+    height: 153%;
+  }
+  #picmap2 {
+    position: absolute;
+    top: -40px;
+    width: 30%;
+    height: 90%;
+  }
+  #picmap3 {
+    position: absolute;
+    top: -11vh;
+    left: 1.5vw;
+    width: 95%;
+    height: 170%;
+  }
+
+  #picmap4 {
+    position: absolute;
+    top: 155px;
+    width: 28%;
+    height: 58%;
+  }
+
+  #picmap5 {
+    position: absolute;
+    top: 410px;
+    width: 400px;
+    left: 600px;
+}
+
+  #buttons {
+    position: absolute;
+    top: 200px;
+    left:580px;
+  }
+
+  #submit_Btn1 {
+    width: 110px;
+  }
+
+  #submit_Btn2 {
+    width: 120px;
+  }
+
+  #submit_Btn3 {
+    width: 140px;
+  }
+
+  #submit_Btn4 {
+    width: 70px;
+  }
+
+  #textt {
+    position: absolute;
+    top: 0vh;
+    left: 600px;
+    width:320px;
+    font-size: 20px;
+    font-family: "Noto Sans TC", sans-serif;
+  }
+}
+@media(max-width: 900px){
+    #page4_h1{
+        margin-left: 300px;
+        font-family: "Noto Sans TC", sans-serif;
+
+      }
+
+    #picmap {
+      position: absolute;
+      top:-50px;
+      left:-850px;
+      width:850px;
+      height:960px;
+      
+    }
+
+    #picmap1 {
+      position: absolute;
+      top:-45px;
+      left: -840px;
+      width: 800px;
+      height:950px; 
+      z-index: 2000;
+    }
+    #picmap2 {
+      position: absolute;
+      top:-85px;
+      left: -850px;
+      width: 1000px;
+      height:1000px; 
+    }
+    #picmap3 {
+      position: absolute;
+      top:-40px;
+      left: -828px;
+      width: 800px;
+      height:950px; 
+    }
+
+    #picmap4 {
+      position: absolute;
+      top:180px;
+      left: -780px;
+      width: 650px;
+      height:650px; 
+    }
+
+    #picmap5 {
+      position: absolute;
+      top:200px;
+      left: -850px;
+      
+    }
+
+    #buttons{
+      position: absolute;
+      top: 3700px;
+      left: 3px;
+      
+    }
+
+    #submit_Btn1{
+      width:100px;
+    }
+
+    #submit_Btn2{
+      width:120px;
+    }
+
+    #submit_Btn3{
+      width:126px;
+    }
+
+    #submit_Btn4{
+      width:50px;
+    }
+
+    #textt{
+      position: absolute;
+      top: 1000px;
+      left: 150px;
+      font-family: 'Noto Sans TC', sans-serif;
+    }
+    }

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css" />
+  <!-- 字體 -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400&display=swap" rel="stylesheet" />
+  <!-- d3 -->
+  <script src="https://d3js.org/d3.v3.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- 字體 -->
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="index.css" />
+  <link rel="stylesheet" type="text/css" href="map.css" />
+  <link rel="stylesheet" type="text/css" href="clam.css" />
+  <link href="font.css" rel="stylesheet" type="text/css" />
+
+  <script src="map.js"></script>
+  <script text="javascript" src="d3.js"></script>
+
+  <script>
+    //   window.onload = function(){       //網頁載入後,註冊按鈕的 click 事件回應函式 move
+    //   var btn = document.getElementById('move');
+    //   btn.addEventListener('click', move, false);
+    // };
+    //
+    //   function move(){
+    //     var playstate;
+    //     var clams = document.getElementById('clams1')
+    //     //按下按鈕時，取得AnimationPlayState這個屬性，並判斷是否為running
+    //     clams.style.animationPlayState == 'running' ? playstate = 'paused': playstate = 'running';
+    //     clams.style.animationPlayState = playstate;
+    //   };
+    var move;
+    var move = function () {
+      var clams0 = document.getElementById("clams0");
+      var playstate;
+      document.getElementById("clams0").style.animationPlayState == "running"
+        ? (playstate = "paused")
+        : (playstate = "running");
+      clams0.style.animationPlayState = playstate;
+
+      var start = document.getElementById("start");
+      if (start.style.display == "none") {
+        start.style.display = "inline";
+      }
+
+      var pic = document.getElementById("pic0");
+      setTimeout(function () {
+        pic.style.display = "inline";
+      }, 2000);
+    };
+
+    var start;
+    var start = function () {
+      var clams1 = document.getElementById("clams1");
+      var playstate;
+      document.getElementById("clams1").style.animationPlayState == "running"
+        ? (playstate = "paused")
+        : (playstate = "running");
+      clams1.style.animationPlayState = playstate;
+
+      var clams0 = document.getElementById("clams0");
+      if (clams0.style.display == "inline") {
+        clams0.style.display = "none";
+      }
+
+      var clams1 = document.getElementById("clams1");
+      if (clams1.style.display == "none") {
+        clams1.style.display = "inline";
+      }
+
+      var start = document.getElementById("start");
+      if (start.style.display == "inline") {
+        start.style.display = "none";
+      }
+
+      var next1 = document.getElementById("next1");
+      if (next1.style.display == "none") {
+        next1.style.display = "inline";
+      }
+
+      var pic = document.getElementById("pic0");
+      if (pic.style.display == "inline") {
+        pic.style.display = "none";
+      }
+
+      var firstPic = document.getElementById("pic1");
+      setTimeout(function () {
+        firstPic.style.display = "inline";
+      }, 2000);
+    };
+
+    var next1;
+    var next1 = function () {
+      var clams1 = document.getElementById("clams1");
+      if (clams1.style.display == "inline") {
+        clams1.style.display = "none";
+      }
+
+      var clams2 = document.getElementById("clams2");
+      if (clams2.style.display == "none") {
+        clams2.style.display = "inline";
+      }
+
+      var next1 = document.getElementById("next1");
+      if (next1.style.display == "inline") {
+        next1.style.display = "none";
+      }
+
+      var next2 = document.getElementById("next2");
+      if (next2.style.display == "none") {
+        next2.style.display = "inline";
+      }
+
+      var playstate;
+      document.getElementById("clams2").style.animationPlayState == "running"
+        ? (playstate = "paused")
+        : (playstate = "running");
+      clams2.style.animationPlayState = playstate;
+
+      var firstPic = document.getElementById("pic1");
+      if ((firstPic.style.display = "inline")) {
+        firstPic.style.display = "none";
+      }
+
+      var secondPic = document.getElementById("pic2");
+      setTimeout(function () {
+        secondPic.style.display = "inline";
+      }, 2000);
+    };
+
+    var next2;
+    var next2 = function () {
+      var clams2 = document.getElementById("clams2");
+      if (clams2.style.display == "inline") {
+        clams2.style.display = "none";
+      }
+
+      // 替換新主角
+      var clams3 = document.getElementById("clams3");
+      if (clams3.style.display == "none") {
+        clams3.style.display = "inline";
+      }
+
+      // 開始/暫停
+      var playstate;
+      document.getElementById("clams3").style.animationPlayState == "running"
+        ? (playstate = "paused")
+        : (playstate = "running");
+      clams3.style.animationPlayState = playstate;
+
+      var next2 = document.getElementById("next2");
+      if (next2.style.display == "inline") {
+        next2.style.display = "none";
+      }
+
+      var next3 = document.getElementById("next3");
+      if (next3.style.display == "none") {
+        next3.style.display = "inline";
+      }
+
+      var secondPic = document.getElementById("pic2");
+      if ((secondPic.style.display = "inline")) {
+        secondPic.style.display = "none";
+      }
+
+      // 抵達新一站時的介紹出現
+      var thirdPic = document.getElementById("pic3");
+      setTimeout(function () {
+        thirdPic.style.display = "inline";
+      }, 2000);
+    };
+
+    var next3;
+    var next3 = function () {
+      var clams3 = document.getElementById("clams3");
+      if (clams3.style.display == "inline") {
+        clams3.style.display = "none";
+      }
+
+      var clams4 = document.getElementById("clams4");
+      if (clams4.style.display == "none") {
+        clams4.style.display = "inline";
+      }
+
+      var playstate;
+      document.getElementById("clams4").style.animationPlayState == "running"
+        ? (playstate = "paused")
+        : (playstate = "running");
+      clams4.style.animationPlayState = playstate;
+
+      var next3 = document.getElementById("next3");
+      if (next3.style.display == "inline") {
+        next3.style.display = "none";
+      }
+
+      var next4 = document.getElementById("next4");
+      if (next4.style.display == "none") {
+        next4.style.display = "inline";
+      }
+
+      var thirdPic = document.getElementById("pic3");
+      if ((thirdPic.style.display = "inline")) {
+        thirdPic.style.display = "none";
+      }
+
+      var forthPic = document.getElementById("pic4");
+      setTimeout(function () {
+        forthPic.style.display = "inline";
+      }, 2000);
+    };
+
+    var next4;
+    var next4 = function () {
+      var clams4 = document.getElementById("clams4");
+      if (clams4.style.display == "inline") {
+        clams4.style.display = "none";
+      }
+
+      var clams5 = document.getElementById("clams5");
+      if (clams5.style.display == "none") {
+        clams5.style.display = "inline";
+      }
+
+      var playstate;
+      document.getElementById("clams5").style.animationPlayState == "running"
+        ? (playstate = "paused")
+        : (playstate = "running");
+      clams5.style.animationPlayState = playstate;
+
+      var next4 = document.getElementById("next4");
+      if (next4.style.display == "inline") {
+        next4.style.display = "none";
+      }
+
+      var forthPic = document.getElementById("pic4");
+      if ((forthPic.style.display = "inline")) {
+        forthPic.style.display = "none";
+      }
+
+      var end = document.getElementById("end");
+      setTimeout(function () {
+        end.style.display = "inline";
+      }, 2000);
+    };
+  </script>
+</head>
+
+<body>
+  <iframe id='phoneFrame' src='phone.html' style="height: 100vh; width: 100%;"></iframe>
+  <div id='web'>
+    <div class="bg" id="parallax1">
+      <div id="page1">
+        <div id="pg1">
+          <p id="ln1">七股正在上演的漁電共生是全球首創的願景。</p>
+          <p id="ln2">
+            根據行政院農業委員會漁業署民國108年統計，台灣各地魚塭總面積約3萬公頃，且超過半數在日
+          </p>
+          <p id="ln3">照時間較長的中南部地區。</p>
+          <p id="ln4">
+            漁電共生構想在魚塭上裝設太陽能板、一地多用，讓狹小的台灣擠出土
+          </p>
+          <p id="ln5">地，增加太陽能板覆蓋率，進而提升再生能源的發電量。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg d-flex justify-content-center" id="parallax2">
+      <div id="pg2">
+        <div id="word">
+          近八年，台灣的再生能源發電 量共增長44億度，太陽能的發
+          電占比則逐年上升。總統蔡英 文推動能源轉型政策，喊出民
+          國114年綠能發電占比達20% 的口號；同年度，光電預計要占
+          再生能源的發電量高達四成， 且裝置容量至少20GW（十億瓦）。太陽
+          能極可能是未來的綠電主力。
+        </div>
+        <div id="word2">
+          太陽光電分為屋頂型與地面型二類型，漁電共生屬於地面型。原政策規劃認為，地面型光電設施可大規模、大面積推廣，因此寄予厚望。不過，目前業者圈設的案場受到不少地方聲浪反彈而踩剎車。因此，經濟部於108年重新調整二者的容量配比（註），調降地面型光電的目標容量。建置地面型光電設施所需土地量龐大。政府在制定新型態綠能政策的同時，是否已有完善的土地規劃？
+        </div>
+        
+        <div id="pic">
+          <img src="img/pg2pic.png" width="500" height="800" />
+        </div>
+      </div>
+    </div>
+
+    <div class="bg" id="parallax3">
+      <div id="page3">
+        <div id="pg3">
+          <p id="ln1">漁電共生一片美意，盼推展再生能源與養殖漁業升級，讓綠電</p>
+          <p id="ln2">與魚塭生態共榮。</p>
+          <p id="ln3">
+            然而，選址未經審慎評估，反讓光電業者與當地養殖戶之間形成拉鋸。
+          </p>
+          <p id="ln4">而七股已成為全台各處地面型光電設施的縮影。</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 江的地圖 -->
+    <div class="bg d-flex justify-content-center" id="parallax4">
+      <div class="w-100 d-flex align-items-center justify-content-center" id='h1bg'>
+        <div style='z-index: 10000;'>不再「黑琵」？太陽能板建置恐不利七股生態</div>
+      </div>
+      <div id="backcolor" class="row">
+        <div class="w-100" id='h1bg'></div>
+        <div id="buttons" class="col-6">
+          <input type="image" name="submit_Btn" id="submit_Btn1" img src="b1.png" onClick="aa();" />
+          <input type="image" name="submit_Btn" id="submit_Btn2" img src="b2.png" onClick="bb();" />
+          <input type="image" name="submit_Btn" id="submit_Btn3" img src="b3.png" onClick="dd();" />
+          <input type="image" name="submit_Btn" id="submit_Btn4" img src="b4.png" onClick="cc();" />
+        </div>
+        <div id="map" class="col-6" style="width: 30%; height: 40%;">
+          <img src="abc.png" id="picmap" />
+          <img src="iw(1).png" id="picmap1" style="display: none;" />
+          <img src="mm(1).png" id="picmap2" style="display: none;" />
+          <div id="aaa" style="display: none;">
+            <img src="61(1).png" id="picmap3" />
+            <h3 id="textt">
+              台61線以西多為淺坪低密度養殖，<br />
+              當地漁民希望盡量避免在台61線以<br />西發展漁電共生。
+            </h3>
+          </div>
+          <div id="bbb" style="display: none;">
+            <img src="ss(1).png" id="picmap4" />
+          </div>
+          <img src="bpf(1).png" id="picmap5" />
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="bg" id="parallax5"></div>
+
+    <div class="bg" id="parallax6"></div>
+    <div class="bg" id="parallax7"></div>
+    <div class="bg" id="parallax8"></div>
+    <div class="bg" id="parallax9"></div>
+    <div class="bg" id="parallax10"></div>
+    <div class="bg" id="parallax11"></div>
+    <div class="bg" id="parallax12"></div>
+
+    <iframe src='clamsMap.html' class="bg" id='clams'></iframe>
+
+    <div class="bg" id="parallax13"></div>
+  </div>
+  <script>
+    let para1 = document.querySelector("#parallax1");
+    handleScroll = () => {
+      console.log(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+  </script>
+</body>
+
+</html>

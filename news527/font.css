@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/earlyaccess/notosanstc.css');
+
+
+#circle {
+    margin-left: 80px;
+    margin-bottom: 30px;
+
+    font-family: 'Noto Sans TC', sans-serif;
+    /* color: #604c3f;} */
+}
+
+.domain {
+    fill: #9b8a81;
+}
+#histogram{
+    margin-left: 10px;
+    margin-top: -90px;
+}
+.tick{
+    color: #9b8a81;
+    fill: #9b8a81;
+    
+}

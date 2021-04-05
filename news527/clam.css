@@ -1,0 +1,308 @@
+/* 開始*/
+.clams0 {
+  position: relative;
+  top: 200px;
+  left: 0vw;
+  max-width: 100px;
+  max-height: 100px;
+  animation-name: case0;
+  /* 執行動畫名稱 */
+  animation-duration: 2s;
+  /* 執行動畫的時間長度 */
+  animation-iteration-count: 1;
+  animation-play-state: paused;
+  animation-direction: normal;
+  animation-timing-function: ease-in;
+  transition-duration: 2s linear;
+  animation-fill-mode: forwards;
+}
+
+/* @keyframes 執行動畫的效果 */
+@-webkit-keyframes case0 {
+  0% {
+    top: 8vh;
+    left: 0vw;
+  }
+
+  100% {
+    top: 8vh;
+    left: 13vw;
+    visibility: hidden;
+  }
+}
+
+#clams0 {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  position: relative;
+  top: 200px;
+  left: 20px;
+}
+
+#pic0 {
+  position: relative;
+  top: 200px;
+  left: 20px;
+  width: 40%;
+  height: 78%;
+}
+
+/* 開始到第一站*/
+#start {
+  position: relative;
+  top: 0px;
+  left: 20px;
+  height: 15%;
+  width: 14%;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+
+.clams1 {
+  position: relative;
+  top: 200px;
+  left: 40px;
+  max-width: 20%;
+  max-height: 20%;
+  animation-name: case1;
+  /* 執行動畫名稱 */
+  animation-duration: 2s;
+  /* 執行動畫的時間長度 */
+  animation-iteration-count: 1;
+  animation-play-state: paused;
+  animation-direction: normal;
+  animation-timing-function: ease-in;
+  transition-duration: 2s linear;
+  animation-fill-mode: forwards;
+}
+
+/* @keyframes 執行動畫的效果 */
+@-webkit-keyframes case1 {
+  0% {
+    top: 8vh;
+    left: 13vw;
+  }
+
+  100% {
+    top: 8vh;
+    left: 22vw;
+  }
+}
+
+/*下一站*/
+#next1 {
+  position: absolute;
+  top: 2438vh;
+  left: 44vw;
+  height: 15%;
+  width: 14%;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+
+#pic1 {
+  position: absolute;
+  top: -7vh;
+  left: 25vw;
+  width: 44%;
+  height: 80%;
+}
+
+.clams2 {
+  position: absolute;
+  top: 2408vh;
+  left: 22vw;
+  max-width: 20%;
+  max-height: 20%;
+  animation-name: case2;
+  animation-duration: 2s;
+  /* 執行動畫的時間長度 */
+  animation-iteration-count: 1;
+  animation-play-state: paused;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  transition-duration: 2s linear;
+}
+
+@-webkit-keyframes case2 {
+  0% {
+    top: 8vh;
+    left: 22vw;
+  }
+
+  100% {
+    top: 14vh;
+    left: 49vw;
+  }
+}
+
+#next2 {
+  position: absolute;
+  top: 2428vh;
+  left: 72vw;
+  height: 15%;
+  width: 14%;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+
+#pic2 {
+  position: absolute;
+  top: 2383vh;
+  left: 52vw;
+  width: 45%;
+  height: 80%;
+}
+
+.clams3 {
+  position: absolute;
+  top: 2414vh;
+  left: 49vw;
+  max-width: 20%;
+  max-height: 20%;
+  animation-name: case3;
+  animation-duration: 2s;
+  /* 執行動畫的時間長度 */
+  animation-iteration-count: 1;
+  animation-play-state: paused;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  transition-duration: 2s linear;
+}
+
+@-webkit-keyframes case3 {
+  0% {
+    top: 2414vh;
+    left: 49vw;
+  }
+
+  100% {
+    top: 2462vh;
+    left: 39vw;
+  }
+}
+
+#next3 {
+  position: absolute;
+  top: 2474vh;
+  left: 24vw;
+  height: 15%;
+  width: 14%;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+
+#pic3 {
+  position: absolute;
+  top: 2449vh;
+  left: 7vw;
+  width: 35%;
+  height: 50%;
+}
+
+.clams4 {
+  position: absolute;
+  top: 2462vh;
+  left: 39vw;
+  max-width: 20%;
+  max-height: 20%;
+  animation-name: case4;
+  animation-duration: 2s;
+  /* 執行動畫的時間長度 */
+  animation-iteration-count: 1;
+  animation-play-state: paused;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  transition-duration: 2s linear;
+}
+
+@-webkit-keyframes case4 {
+  0% {
+    top: 2462vh;
+    left: 39vw;
+  }
+
+  100% {
+    top: 2470vh;
+    left: 68vw;
+  }
+}
+
+#next4 {
+  position: absolute;
+  top: 2458vh;
+  left: 68vw;
+  height: 15%;
+  width: 14%;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+}
+
+#pic4 {
+  position: absolute;
+  top: 2418vh;
+  left: 48vw;
+  width: 48%;
+  height: 73%;
+}
+
+.clams5 {
+  position: absolute;
+  top: 2470vh;
+  left: 68vw;
+  max-width: 20%;
+  max-height: 20%;
+  animation-name: case5;
+  animation-duration: 2s;
+  /* 執行動畫的時間長度 */
+  animation-iteration-count: 1;
+  animation-play-state: paused;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  transition-duration: 2s linear;
+}
+
+@-webkit-keyframes case5 {
+  0% {
+    top: 2470vh;
+    left: 68vw;
+  }
+
+  100% {
+    top: 2468vh;
+    left: 88vw;
+    visibility: hidden;
+  }
+}
+
+#end {
+  position: absolute;
+  top: 2455vh;
+  left: 64vw;
+  width: 35%;
+  height: 40%;
+}

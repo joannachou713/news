@@ -1,0 +1,210 @@
+.bg {
+  /* Set a specific height */
+  min-height: 150px;
+  width: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#parallax1 {
+  background-image: url("img/p2.jpg");
+  height: 900px;
+}
+
+#parallax2 {
+  background-image: url("img/p3p4p10.jpg");
+  height: 1800px;
+}
+
+#parallax3 {
+  background-image: url("img/p5.jpg");
+  height: 900px;
+}
+
+#parallax4 {
+  background-image: url("img/p6p7_Fotor.jpg");
+  height: 900px;
+}
+
+#parallax5 {
+  background-image: url("img/p8.jpg");
+  height: 900px;
+}
+
+#parallax6 {
+  background-image: url("img/p9.jpg");
+  height: 900px;
+}
+
+#parallax7 {
+  background-image: url("img/p3p4p10.jpg");
+  height: 900px;
+}
+
+#parallax8 {
+  background-image: url("img/p11.png");
+  height: 900px;
+}
+
+#parallax9 {
+  background-image: url("img/p12p15p16.jpg");
+  height: 900px;
+}
+
+#parallax10 {
+  background-image: url("img/p14.jpg");
+  height: 900px;
+}
+
+#parallax11 {
+  background-image: url("img/p12p15p16.jpg");
+  height: 900px;
+}
+
+#parallax12 {
+  background-image: url("img/p17.jpg");
+  height: 900px;
+}
+
+#clams {
+  background-image: url("clamsMap/map1.png");
+  height: 110vh;
+}
+
+#h1bg{
+  background-color: #a6c0bc;
+  height: 160px;
+}
+
+#h1bg > div{
+  color: #575c24;
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 50px;
+}
+
+#parallax13 {
+  background-image: url("img/p19.jpg");
+  height: 900px;
+}
+
+/* 字 */
+#pg1 {
+  position: absolute;
+  top: 130px;
+  left: 100px;
+}
+#pg1 p#ln1,
+#pg1 p#ln2,
+#pg1 p#ln3,
+#pg1 p#ln4,
+#pg1 p#ln5 {
+  background-color: rgba(255, 255, 255, 0.6);
+  padding-top: 5px;
+  font-family: "Noto Sans TC", sans-serif;
+  letter-spacing: 2px;
+}
+#pg1 p#ln1 {
+  width: 360px;
+}
+#pg1 #ln2 {
+  width: 780px;
+}
+#pg1 p#ln3 {
+  width: 250px;
+}
+#pg1 p#ln4 {
+  width: 580px;
+}
+#pg1 p#ln5 {
+  width: 480px;
+}
+
+#pg2 {
+  position: absolute;
+  /* left: 300px; */
+  width: 800px;
+  height: 1800px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+#word {
+  position: absolute;
+  font-family: "Noto Sans TC", sans-serif;
+  letter-spacing: 2px;
+  line-height: 30px;
+  width: 260px;
+  left: 480px;
+  top: 380px;
+}
+
+#word2 {
+  position: absolute;
+  font-family: "Noto Sans TC", sans-serif;
+  letter-spacing: 2px;
+  line-height: 30px;
+  width: 260px;
+  left: 480px;
+  top: 1100px;
+}
+
+#pic {
+  position: absolute;
+  left: 10px;
+  top: 850px;
+}
+
+#pg3 {
+  position: absolute;
+  top: 3000px;
+  left: 60%;
+}
+
+#pg3 p#ln1,
+#pg3 p#ln2,
+#pg3 p#ln3,
+#pg3 p#ln4 {
+  background-color: rgba(255, 255, 255, 0.75);
+  padding-top: 5px;
+  font-family: "Noto Sans TC", sans-serif;
+  letter-spacing: 2px;
+}
+
+#pg3 p#ln1 {
+  width: 550px;
+}
+#pg3 #ln2 {
+  width: 200px;
+}
+#pg3 p#ln3 {
+  width: 250px;
+}
+#pg3 p#ln4 {
+  width: 580px;
+}
+
+/* #page4 {
+  position: absolute;
+  left: 10px;
+  top: 4800px;
+} */
+
+/******/
+#web{
+  display: inline;
+}
+#phoneFrame{
+  display: none;
+}
+/*phone*/
+@media only screen and (max-width: 900px){
+  #phoneFrame{
+    display: block;
+  }
+  #web{
+    display: none;
+  }
+}
+

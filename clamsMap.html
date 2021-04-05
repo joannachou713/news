@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- bug:按下btn後過四秒圖片就會出現、若沒照順序按btn仍會有反應 -->
+    <meta charset="utf-8" />
+    <title>蛤蠣地圖</title>
+    <!-- <script src="clamsMap.js" type="text/javascript"></script> -->
+    <!-- <link rel="stylesheet" href="clamsMap.css" type="text/css" />
+  </head> -->
+  <body>
+    <style>
+      body {
+        background-image: url('clamsMap/map1.png');
+        background-attachment: fixed;
+        background-size: cover;
+        background-size: 100% 100%;
+      }
+
+      /* 開始*/
+      .clams0{
+        position: absolute;
+        top: 8vh;
+        left: 0vw;
+        max-width: 20%;
+        max-height: 20%;
+        animation-name: case0; /* 執行動畫名稱 */
+        animation-duration: 2s ;     /* 執行動畫的時間長度 */
+        animation-iteration-count: 1;
+        animation-play-state: paused;
+        animation-direction: normal;
+        animation-timing-function: ease-in
+        transition-duration: 2s linear;
+        animation-fill-mode: forwards;
+      }
+
+      /* @keyframes 執行動畫的效果 */
+      @-webkit-keyframes case0 {
+        0% {top: 8vh; left: 0vw;}
+        100% {top:8vh; left: 13vw; visibility: hidden;}
+      }
+
+      #clams0{
+        background-color: Transparent;
+        background-repeat:no-repeat;
+        border: none;
+        cursor:pointer;
+        overflow: hidden;
+        outline:none;
+        }
+
+      #pic0{
+        position:absolute;
+        top: -7vh;
+        left: 9vw;
+        width: 40%;
+        height: 68%;
+      }
+
+      /* 開始到第一站*/
+      #start{
+        position: absolute;
+        top: 30vh;
+        left: 28vw;
+        height: 15%;
+        width: 14%;
+        background-color: Transparent;
+        background-repeat:no-repeat;
+        border: none;
+        cursor:pointer;
+        overflow: hidden;
+        outline:none;
+        }
+      .clams1{
+        position: absolute;
+        top: 9vh;
+        left: 13vw;
+        max-width: 20%;
+        max-height: 20%;
+        animation-name: case1; /* 執行動畫名稱 */
+        animation-duration: 2s ;     /* 執行動畫的時間長度 */
+        animation-iteration-count: 1;
+        animation-play-state: paused;
+        animation-direction: normal;
+        animation-timing-function: ease-in
+        transition-duration: 2s linear;
+        animation-fill-mode: forwards;
+      }
+      /* @keyframes 執行動畫的效果 */
+      @-webkit-keyframes case1 {
+        0% {top: 8vh; left: 13vw;}
+        100% {top:8vh; left: 22vw;}
+      }
+      /*下一站*/
+      #next1{
+        position: absolute;
+        top: 32vh;
+        left: 44vw;
+        height: 15%;
+        width: 14%;
+        background-color: Transparent;
+        background-repeat:no-repeat;
+        border: none;
+        cursor:pointer;
+        overflow: hidden;
+        outline:none;
+      }
+
+      #pic1{
+        position: absolute;
+        top: -7vh;
+        left: 25vw;
+        width: 40%;
+        height: 68%;
+      }
+
+      .clams2{
+        position: absolute;
+        top: 8vh;
+        left: 22vw;
+        max-width: 20%;
+        max-height: 20%;
+        animation-name: case2;
+        animation-duration: 2s;     /* 執行動畫的時間長度 */
+        animation-iteration-count: 1;
+        animation-play-state: paused;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+        transition-duration: 2s linear;
+      }
+
+      @-webkit-keyframes case2 {
+        0% {top: 8vh; left: 22vw;}
+        100% {top: 14vh; left: 49vw;}
+      }
+
+      #next2{
+        position: absolute;
+        top: 20vh;
+        left: 70vw;
+        height: 15%;
+        width: 14%;
+        background-color: Transparent;
+        background-repeat:no-repeat;
+        border: none;
+        cursor:pointer;
+        overflow: hidden;
+        outline:none;
+      }
+
+      #pic2{
+        position:absolute;
+        top: -17vh;
+        left: 52vw;
+        width: 40%;
+        height: 68%;
+      }
+
+      .clams3{
+        position: absolute;
+        top: 14vh;
+        left: 49vw;
+        max-width: 20%;
+        max-height: 20%;
+        animation-name: case3;
+        animation-duration: 2s;     /* 執行動畫的時間長度 */
+        animation-iteration-count: 1;
+        animation-play-state: paused;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+        transition-duration: 2s linear;
+      }
+
+      @-webkit-keyframes case3 {
+        0% {top: 14vh; left: 49vw;}
+        100% {top: 62vh; left: 39vw;}
+      }
+
+      #next3{
+        position: absolute;
+        top: 76vh;
+        left: 24vw;
+        height: 15%;
+        width: 14%;
+        background-color: Transparent;
+        background-repeat:no-repeat;
+        border: none;
+        cursor:pointer;
+        overflow: hidden;
+        outline:none;
+      }
+
+      #pic3{
+        position:absolute;
+        top: 49vh;
+        left: 7vw;
+        width: 35%;
+        height: 50%;
+      }
+
+      .clams4{
+        position: absolute;
+        top: 62vh;
+        left: 39vw;
+        max-width: 20%;
+        max-height: 20%;
+        animation-name: case4;
+        animation-duration: 2s ;     /* 執行動畫的時間長度 */
+        animation-iteration-count: 1;
+        animation-play-state: paused;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+        transition-duration: 2s linear;
+      }
+
+      @-webkit-keyframes case4 {
+        0% {top: 62vh; left: 39vw;}
+        100% {top: 70vh; left: 68vw;}
+      }
+
+      #next4{
+        position: absolute;
+        top: 55vh;
+        left: 68vw;
+        height: 15%;
+        width: 14%;
+        background-color: Transparent;
+        background-repeat:no-repeat;
+        border: none;
+        cursor:pointer;
+        overflow: hidden;
+        outline:none;
+      }
+
+      #pic4{
+        position:absolute;
+        top: 18vh;
+        left: 48vw;
+        width: 43%;
+        height: 70%;
+      }
+
+      .clams5{
+        position: absolute;
+        top: 70vh;
+        left: 68vw;
+        max-width: 20%;
+        max-height: 20%;
+        animation-name: case5;
+        animation-duration: 2s;     /* 執行動畫的時間長度 */
+        animation-iteration-count: 1;
+        animation-play-state: paused;
+        animation-direction: normal;
+        animation-fill-mode: forwards;
+        transition-duration: 2s linear;
+      }
+
+      @-webkit-keyframes case5 {
+        0% {top:70vh; left: 68vw;}
+        100% {top:68vh; left: 88vw; visibility: hidden;}
+      }
+
+      #end{
+        position:absolute;
+        top: 55vh;
+        left: 64vw;
+        width: 30%;
+        height: 41%;
+      }
+    </style>
+    <script>
+      var move;
+      var move = function () {
+        var clams0 = document.getElementById("clams0");
+        var playstate;
+        document.getElementById("clams0").style.animationPlayState == "running"
+          ? (playstate = "paused")
+          : (playstate = "running");
+        clams0.style.animationPlayState = playstate;
+
+        var start = document.getElementById("start");
+        if (start.style.display == "none") {
+          start.style.display = "inline";
+        }
+
+        var pic = document.getElementById("pic0");
+        setTimeout(function () {
+          pic.style.display = "inline";
+        }, 2000);
+      };
+
+      var start;
+      var start = function () {
+        var clams1 = document.getElementById("clams1");
+        var playstate;
+        document.getElementById("clams1").style.animationPlayState == "running"
+          ? (playstate = "paused")
+          : (playstate = "running");
+        clams1.style.animationPlayState = playstate;
+
+        var clams0 = document.getElementById("clams0");
+        if (clams0.style.display == "inline") {
+          clams0.style.display = "none";
+        }
+
+        var clams1 = document.getElementById("clams1");
+        if (clams1.style.display == "none") {
+          clams1.style.display = "inline";
+        }
+
+        var start = document.getElementById("start");
+        if (start.style.display == "inline") {
+          start.style.display = "none";
+        }
+
+        var next1 = document.getElementById("next1");
+        if (next1.style.display == "none") {
+          next1.style.display = "inline";
+        }
+
+        var pic = document.getElementById("pic0");
+        if (pic.style.display == "inline") {
+          pic.style.display = "none";
+        }
+
+        var firstPic = document.getElementById("pic1");
+        setTimeout(function () {
+          firstPic.style.display = "inline";
+        }, 2000);
+      };
+
+      var next1;
+      var next1 = function () {
+        var clams1 = document.getElementById("clams1");
+        if (clams1.style.display == "inline") {
+          clams1.style.display = "none";
+        }
+
+        var clams2 = document.getElementById("clams2");
+        if (clams2.style.display == "none") {
+          clams2.style.display = "inline";
+        }
+
+        var next1 = document.getElementById("next1");
+        if (next1.style.display == "inline") {
+          next1.style.display = "none";
+        }
+
+        var next2 = document.getElementById("next2");
+        if (next2.style.display == "none") {
+          next2.style.display = "inline";
+        }
+
+        var playstate;
+        document.getElementById("clams2").style.animationPlayState == "running"
+          ? (playstate = "paused")
+          : (playstate = "running");
+        clams2.style.animationPlayState = playstate;
+
+        var firstPic = document.getElementById("pic1");
+        if ((firstPic.style.display = "inline")) {
+          firstPic.style.display = "none";
+        }
+
+        var secondPic = document.getElementById("pic2");
+        setTimeout(function () {
+          secondPic.style.display = "inline";
+        }, 2000);
+      };
+
+      var next2;
+      var next2 = function () {
+        var clams2 = document.getElementById("clams2");
+        if (clams2.style.display == "inline") {
+          clams2.style.display = "none";
+        }
+
+        // 替換新主角
+        var clams3 = document.getElementById("clams3");
+        if (clams3.style.display == "none") {
+          clams3.style.display = "inline";
+        }
+
+        // 開始/暫停
+        var playstate;
+        document.getElementById("clams3").style.animationPlayState == "running"
+          ? (playstate = "paused")
+          : (playstate = "running");
+        clams3.style.animationPlayState = playstate;
+
+        var next2 = document.getElementById("next2");
+        if (next2.style.display == "inline") {
+          next2.style.display = "none";
+        }
+
+        var next3 = document.getElementById("next3");
+        if (next3.style.display == "none") {
+          next3.style.display = "inline";
+        }
+
+        var secondPic = document.getElementById("pic2");
+        if ((secondPic.style.display = "inline")) {
+          secondPic.style.display = "none";
+        }
+
+        // 抵達新一站時的介紹出現
+        var thirdPic = document.getElementById("pic3");
+        setTimeout(function () {
+          thirdPic.style.display = "inline";
+        }, 2000);
+      };
+
+      var next3;
+      var next3 = function () {
+        var clams3 = document.getElementById("clams3");
+        if (clams3.style.display == "inline") {
+          clams3.style.display = "none";
+        }
+
+        var clams4 = document.getElementById("clams4");
+        if (clams4.style.display == "none") {
+          clams4.style.display = "inline";
+        }
+
+        var playstate;
+        document.getElementById("clams4").style.animationPlayState == "running"
+          ? (playstate = "paused")
+          : (playstate = "running");
+        clams4.style.animationPlayState = playstate;
+
+        var next3 = document.getElementById("next3");
+        if (next3.style.display == "inline") {
+          next3.style.display = "none";
+        }
+
+        var next4 = document.getElementById("next4");
+        if (next4.style.display == "none") {
+          next4.style.display = "inline";
+        }
+
+        var thirdPic = document.getElementById("pic3");
+        if ((thirdPic.style.display = "inline")) {
+          thirdPic.style.display = "none";
+        }
+
+        var forthPic = document.getElementById("pic4");
+        setTimeout(function () {
+          forthPic.style.display = "inline";
+        }, 2000);
+      };
+
+      var next4;
+      var next4 = function () {
+        var clams4 = document.getElementById("clams4");
+        if (clams4.style.display == "inline") {
+          clams4.style.display = "none";
+        }
+
+        var clams5 = document.getElementById("clams5");
+        if (clams5.style.display == "none") {
+          clams5.style.display = "inline";
+        }
+
+        var playstate;
+        document.getElementById("clams5").style.animationPlayState == "running"
+          ? (playstate = "paused")
+          : (playstate = "running");
+        clams5.style.animationPlayState = playstate;
+
+        var next4 = document.getElementById("next4");
+        if (next4.style.display == "inline") {
+          next4.style.display = "none";
+        }
+
+        var forthPic = document.getElementById("pic4");
+        if ((forthPic.style.display = "inline")) {
+          forthPic.style.display = "none";
+        }
+
+        var end = document.getElementById("end");
+        setTimeout(function () {
+          end.style.display = "inline";
+        }, 2000);
+      };
+    </script>
+
+    <div>
+      <img src="clamsMap/start.png" id="pic0" style="display: none;" />
+      <button id="start" onclick="start()" style="display: none;"></button>
+    </div>
+
+    <div>
+      <img src="clamsMap/next1.png" id="pic1" style="display: none;" />
+      <button id="next1" onclick="next1()" style="display: none;"></button>
+    </div>
+
+    <div>
+      <img src="clamsMap/next2.png" id="pic2" style="display: none;" />
+      <button id="next2" onclick="next2()" style="display: none;"></button>
+    </div>
+
+    <div>
+      <img src="clamsMap/next3.png" id="pic3" style="display: none;" />
+      <button id="next3" onclick="next3()" style="display: none;"></button>
+    </div>
+
+    <div>
+      <img src="clamsMap/next4.png" id="pic4" style="display: none;" />
+      <button id="next4" onclick="next4()" style="display: none;"></button>
+    </div>
+
+    <div>
+      <img src="clamsMap/end.png" id="end" style="display: none;" />
+    </div>
+
+    <img
+      src="clamsMap/clam.png"
+      type="button"
+      onclick="move()"
+      class="clams0"
+      id="clams0"
+      style="display: inline;"
+    />
+    <img
+      src="clamsMap/clam.png"
+      class="clams1"
+      id="clams1"
+      style="display: none;"
+    />
+    <img
+      src="clamsMap/clam.png"
+      class="clams2"
+      id="clams2"
+      style="display: none;"
+    />
+    <img
+      src="clamsMap/clam.png"
+      class="clams3"
+      id="clams3"
+      style="display: none;"
+    />
+    <img
+      src="clamsMap/clam.png"
+      class="clams4"
+      id="clams4"
+      style="display: none;"
+    />
+    <img
+      src="clamsMap/clam.png"
+      class="clams5"
+      id="clams5"
+      style="display: none;"
+    />
+  </body>
+</html>
